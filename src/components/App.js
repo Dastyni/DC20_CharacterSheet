@@ -3,7 +3,7 @@ import CharacterList from "./CharacterList";
 import "../App.css";
 
 const App = () => {
-  const version = 0.3;
+  const version = "0.3.1";
 
   return (
     <div>
