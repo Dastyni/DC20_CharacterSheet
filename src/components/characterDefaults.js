@@ -19,6 +19,7 @@ const CharacterDefaults = {
     Intelligence: "",
     Charisma: "",
   },
+  Textarea: {},
   Saves: {
     Physical: "",
     Mental: "",
