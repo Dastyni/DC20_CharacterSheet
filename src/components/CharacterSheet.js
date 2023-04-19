@@ -99,6 +99,25 @@ const CharacterSheet = ({ character, index, callbacks }) => {
       <div className="centerContent">
         <AttributeBlock character={character} onChange={onChange} />
       </div>
+      <div className="textAreaContainer setWidth">
+        <center>
+          <DisplayTextarea
+            widthPercent={33.33}
+            height={300}
+            className="left-textarea"
+          />
+          <DisplayTextarea
+            widthPercent={33.33}
+            height={300}
+            className="middle-textarea"
+          />
+          <DisplayTextarea
+            widthPercent={33.33}
+            height={300}
+            className="right-textarea"
+          />
+        </center>
+      </div>
     </div>
   );
 };
