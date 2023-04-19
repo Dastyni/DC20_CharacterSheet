@@ -478,3 +478,30 @@ input:disabled {
   border: var(--border-color) 1px solid;
   /* add padding as needed */
 }
+
+
+.skull-image {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url('images/skull_white.png');
+}
+
+.skull-image.selected {
+  background-image: url('images/skull_black.png');
+}
+
+.skull-image.black {
+  background-image: url("images/skull_black.png");
+}
+
+.skull-image.white {
+  background-image: url("images/skull_white.png");
+}
+
+.skullsize {
+  width: 30px;
+  height: 30px;
+}

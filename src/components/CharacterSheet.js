@@ -12,6 +12,7 @@ import DisplayHPAll from "./DisplayHPAll";
 import DisplayAPAll from "./DisplayAPAll";
 import DisplayManaBlock from "./DisplayManaBlock";
 import DisplayTextArea from "./DisplayTextArea";
+import DisplayExaustion from "./DisplayExaustion";
 
 const CharacterSheet = ({ character, index, callbacks }) => {
   const [imageUrl, setImageUrl] = useState(
@@ -76,6 +77,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
           attribKey={"Mana"}
           onChange={onChange}
         />
+        <DisplayExaustion character={character} onChange={onChange} />
       </div>
       <div className="centerContent ">
         <div className="centerContent setWidth table-wrapper">
