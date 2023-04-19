@@ -68,7 +68,7 @@ const DisplayExaustion = ({ character, onChange }) => {
             >
               <img
                 className="skullsize"
-                src={`${exaustion ? skull1 : skull2}`}
+                src={`${exaustion ? skull2 : skull1}`}
                 alt={`skull-${index}`}
               />
             </label>
