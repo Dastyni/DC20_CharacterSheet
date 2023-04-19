@@ -11,7 +11,7 @@ import DisplayPrime from "./DisplayPrime";
 import DisplayHPAll from "./DisplayHPAll";
 import DisplayAPAll from "./DisplayAPAll";
 import DisplayManaBlock from "./DisplayManaBlock";
-import DisplaySave from "./DisplaySave";
+import DisplayTextArea from "./DisplayTextArea";
 
 const CharacterSheet = ({ character, index, callbacks }) => {
   const [imageUrl, setImageUrl] = useState(
@@ -98,6 +98,34 @@ const CharacterSheet = ({ character, index, callbacks }) => {
       </div>
       <div className="centerContent">
         <AttributeBlock character={character} onChange={onChange} />
+      </div>
+      <div className="centerContent">
+        <div className="centerContent setWidth">
+          <div className="textAreaContainer ">
+            <DisplayTextArea
+              character={character}
+              widthPercent={33}
+              height={300}
+              className="textarea"
+              attribKey="Gear"
+              onChange={onChange}
+            />
+            <DisplayTextArea
+              character={character}
+              attribKey="Features"
+              widthPercent={33}
+              height={300}
+              className="textarea"
+            />
+            <DisplayTextArea
+              character={character}
+              attribKey="Notes"
+              widthPercent={33}
+              height={300}
+              className="textarea"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
