@@ -3,13 +3,14 @@ import characterDefaults from "./characterDefaults";
 import CharacterSheet from "./CharacterSheet";
 import OutdatedSheet from "./OutdatedSheet";
 
-const CharacterList = (version) => {
+const CharacterList = ({ version }) => {
   const [selectedID, setSelectedID] = useState("");
   const [character, setCharacter] = useState("");
   const [charList, setList] = useState([]);
   const [outdatedCharacter, setOutdatedCharacter] = useState(false);
 
   useEffect(() => {
+    console.log("Opening CharacterList Version " + version);
     const storedCharacters = localStorage.getItem("DCchar");
     const characters = storedCharacters ? JSON.parse(storedCharacters) : [];
     setList(characters);
@@ -49,6 +50,15 @@ const CharacterList = (version) => {
     const updatedCharacters = [...charList, newChar];
     localStorage.setItem("DCchar", JSON.stringify(updatedCharacters));
     setList(updatedCharacters);
+    console.log(
+      "Loading character sheet (v" +
+        version +
+        ") for " +
+        newChar.CharacterName +
+        " (version " +
+        newChar.versionCreated +
+        ")"
+    );
     setSelectedID("");
   };
 
