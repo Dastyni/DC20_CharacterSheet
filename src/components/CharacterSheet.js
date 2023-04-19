@@ -105,7 +105,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
             <DisplayTextArea
               character={character}
               widthPercent={33}
-              height={300}
+              height={400}
               className="textarea"
               attribKey="Gear"
               onChange={onChange}
@@ -114,15 +114,17 @@ const CharacterSheet = ({ character, index, callbacks }) => {
               character={character}
               attribKey="Features"
               widthPercent={33}
-              height={300}
+              height={400}
               className="textarea"
+              onChange={onChange}
             />
             <DisplayTextArea
               character={character}
               attribKey="Notes"
               widthPercent={33}
-              height={300}
+              height={400}
               className="textarea"
+              onChange={onChange}
             />
           </div>
         </div>

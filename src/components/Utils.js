@@ -124,7 +124,7 @@ export const calculateDefense = (attribKey, character) => {
   console.log("def now " + defValue);
 
   if (attribKey === "Physical") {
-    if (character.UseMightForPhysicalDef || might >= agility) {
+    if (character.UseMightForPhysicalDef) {
       defValue += might;
     } else {
       defValue += agility;
