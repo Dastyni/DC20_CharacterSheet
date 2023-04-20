@@ -92,7 +92,7 @@ const CharacterDefaults = {
     Current: 0,
   },
   Initiative: 0,
-  Movement: 0,
+  Movement: 4,
 };
 
 export default CharacterDefaults;

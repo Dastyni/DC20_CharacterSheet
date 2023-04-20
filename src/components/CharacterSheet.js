@@ -13,6 +13,8 @@ import DisplayAPAll from "./DisplayAPAll";
 import DisplayManaBlock from "./DisplayManaBlock";
 import DisplayTextArea from "./DisplayTextArea";
 import DisplayExaustion from "./DisplayExaustion";
+import DisplayMovement from "./DisplayMovement";
+import DisplayInitiative from "./DisplayInitiative";
 
 const CharacterSheet = ({ character, index, callbacks }) => {
   const [imageUrl, setImageUrl] = useState(
@@ -93,6 +95,16 @@ const CharacterSheet = ({ character, index, callbacks }) => {
             onChange={onChange}
           />
           <DisplayCM character={character} onChange={onChange} />
+          <DisplayInitiative
+            character={character}
+            attribKey="Initiative"
+            onChange={onChange}
+          />
+          <DisplayMovement
+            character={character}
+            attribKey="Movement"
+            onChange={onChange}
+          />
         </div>
       </div>
       <div className="centerContent">
