@@ -80,7 +80,7 @@ const CharacterDefaults = {
       Awareness: 0,
     },
   },
-  SaveDC: {
+  Save_DC: {
     Base: 0,
     Heavy: 0,
     Brutal: 0,

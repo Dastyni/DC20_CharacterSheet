@@ -17,6 +17,7 @@ import DisplayMovement from "./DisplayMovement";
 import DisplayInitiative from "./DisplayInitiative";
 import AllSkills from "./AllSkills";
 import DisplayRest from "./DisplayRest";
+import SaveDC from "./SaveDC";
 
 const CharacterSheet = ({ character, index, callbacks }) => {
   const [imageUrl, setImageUrl] = useState(
@@ -110,6 +111,11 @@ const CharacterSheet = ({ character, index, callbacks }) => {
             character={character}
             attribKey="Movement"
             onChange={onChange}
+          />
+          <SaveDC
+            character={character}
+            onChange={onChange}
+            attribKey="Save_DC"
           />
           <DisplayRest
             character={character}
