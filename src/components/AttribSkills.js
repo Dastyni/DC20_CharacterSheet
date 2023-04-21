@@ -24,7 +24,11 @@ const AttribSkills = ({ character, onChange, attribKey }) => {
     <>
       <div key={attribKey}>
         <p>
-          {attribKey} {`(${utils.getBonus(character.Attributes[attribKey])})`}
+          {attribKey === "Other"
+            ? null
+            : `${attribKey} (${utils.getBonus(
+                character.Attributes[attribKey]
+              )})`}
         </p>
         {Object.entries(data).map(([key, value]) =>
           key === "subSkills" ? (
