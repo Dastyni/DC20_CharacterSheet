@@ -84,7 +84,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
         <DisplayExaustion character={character} onChange={onChange} />
       </div>
       <div className="centerContent ">
-        <div className="centerContent setWidth table-wrapper border">
+        <div className="centerContent setWidth table-wrapper ">
           <DisplayHPAll character={character} onChange={onChange} />
           <DisplayAttack
             character={character}
@@ -100,7 +100,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
         </div>
       </div>
       <div className="centerContent ">
-        <div className="centerContent setWidth table-wrapper border">
+        <div className="centerContent setWidth table-wrapper ">
           <DisplayInitiative
             character={character}
             attribKey="Initiative"
@@ -122,35 +122,6 @@ const CharacterSheet = ({ character, index, callbacks }) => {
 
       <div className="centerContent">
         <AllSkills character={character} onChange={onChange} />
-        {/* <div className="setWidth border alignTop">
-          <div
-            className="border"
-            style={{ display: "inline-block", marginRight: "10px" }}
-          >
-            <AttribSkills
-              character={character}
-              onChange={onChange}
-              attribKey={"Might"}
-            />
-            <AttribSkills
-              character={character}
-              onChange={onChange}
-              attribKey={"Agility"}
-            />
-          </div>
-          <div className="border" style={{ display: "inline-block" }}>
-            <AttribSkills
-              character={character}
-              onChange={onChange}
-              attribKey={"Intelligence"}
-            />
-            <AttribSkills
-              character={character}
-              onChange={onChange}
-              attribKey={"Charisma"}
-            />
-          </div>
-        </div> */}
       </div>
 
       <div className="centerContent">
