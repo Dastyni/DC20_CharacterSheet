@@ -16,8 +16,6 @@ export default App;
 
 //TODO #1 fix tooltips
 
-//TODO #5 add skills
-
 //TODO #7 add Save DC
 //TODO #8 add Attacks
 
