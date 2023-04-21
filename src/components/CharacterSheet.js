@@ -16,7 +16,7 @@ import DisplayExaustion from "./DisplayExaustion";
 import DisplayMovement from "./DisplayMovement";
 import DisplayInitiative from "./DisplayInitiative";
 import AllSkills from "./AllSkills";
-import AttribSkills from "./AttribSkills";
+import DisplayRest from "./DisplayRest";
 
 const CharacterSheet = ({ character, index, callbacks }) => {
   const [imageUrl, setImageUrl] = useState(
@@ -109,6 +109,11 @@ const CharacterSheet = ({ character, index, callbacks }) => {
           <DisplayMovement
             character={character}
             attribKey="Movement"
+            onChange={onChange}
+          />
+          <DisplayRest
+            character={character}
+            attribKey="RestPoints"
             onChange={onChange}
           />
         </div>

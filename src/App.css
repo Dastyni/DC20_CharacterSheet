@@ -525,8 +525,3 @@ table.skillWidth td:first-child {
 .block {
   display: inline-flex;
 }
-
-/* .alignTop {
-  display: flex;
-  align-items: flex-start;
-} */

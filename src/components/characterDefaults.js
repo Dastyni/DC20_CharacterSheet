@@ -12,6 +12,7 @@ const CharacterDefaults = {
   Attack: 1,
   UseMightForPhysicalDef: false,
   ArmorValue: 0,
+  RestPoints: 0,
   DR: 0,
   AP: [true, true, true, true, false],
   Exaustion: [false, false, false, false, false],
