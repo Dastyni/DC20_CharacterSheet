@@ -1,5 +1,4 @@
 import React from "react";
-import * as utils from "./Utils";
 import DisplayAttribLine from "./DisplayAttribLine";
 
 const AttributeBlock = ({ character, attribKey, onChange }) => {

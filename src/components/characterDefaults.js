@@ -49,6 +49,11 @@ const CharacterDefaults = {
       Athletics: 0,
       Intimidation: 0,
     },
+    Agility: {
+      Acrobatics: 0,
+      Stealth: 0,
+      Trickery: 0,
+    },
     Intelligence: {
       Investigation: 0,
       Medicine: 0,
@@ -62,18 +67,16 @@ const CharacterDefaults = {
         Lore: 0,
       },
     },
-    Agility: {
-      Acrobatics: 0,
-      Stealth: 0,
-      Trickery: 0,
-    },
+
     Charisma: {
       Animal: 0,
       Influence: 0,
       Insight: 0,
       Performance: 0,
     },
-    Awareness: 0,
+    Other: {
+      Awareness: 0,
+    },
   },
   SaveDC: {
     Base: 0,

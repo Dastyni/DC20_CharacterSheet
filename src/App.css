@@ -8,6 +8,7 @@
   --heavy-color: rgba(255, 138, 5, 0.25);
   --brutal-color: rgba(218, 0, 0, 0.25);
   --border-color: #999;
+  --selected-color: rgba(199, 204, 129, 1);
 }
 
 .App {
@@ -326,7 +327,10 @@ td.flex {
   vertical-align: middle;
 }
 
-
+td.alignTop {
+  vertical-align: top;
+  white-space: nowrap;
+}
 
 body {
   background-color: transparent;
@@ -505,3 +509,24 @@ input:disabled {
   width: 30px;
   height: 30px;
 }
+
+.border {
+  border: #61dafb 1px solid;
+}
+
+.skillWidth {
+  min-width: 200px;
+}
+
+table.skillWidth td:first-child {
+  text-align: right;
+}
+
+.block {
+  display: inline-flex;
+}
+
+/* .alignTop {
+  display: flex;
+  align-items: flex-start;
+} */

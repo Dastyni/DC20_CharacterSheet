@@ -161,3 +161,17 @@ export const recalculateCharacter = (character) => {
 
   return character;
 };
+
+export const getSkillBonus = (value, attribKey, character) => {
+  return 2 * value;
+};
+export const getBonus = (value) => {
+  console.log("have value as ", typeof value);
+  if (value == undefined) return "";
+
+  value = parseInt(value);
+  console.log("now have value as ", value);
+  if (isNaN(value)) return "";
+
+  return value < 0 ? value : "+" + value;
+};

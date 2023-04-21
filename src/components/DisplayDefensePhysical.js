@@ -2,7 +2,6 @@ import React from "react";
 import * as utils from "./Utils";
 
 const DisplayDefensePhysical = ({ character, attribKey, onChange }) => {
-  console.log("----GOT " + attribKey);
   const target = character.Defense;
 
   const handleChange = (event) => {

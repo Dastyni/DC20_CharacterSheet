@@ -17,7 +17,7 @@ export default App;
 //TODO #1 fix tooltips
 
 //TODO #5 add skills
-//TODO #6 add rest points
+
 //TODO #7 add Save DC
 //TODO #8 add Attacks
 
@@ -25,3 +25,4 @@ export default App;
 //TODO #10 Integrate components into DND cards
 
 //TODO #11 Make a generic valueBlock
+//TODO #12 Ensure all missing data is handled and doesn't break the page.
