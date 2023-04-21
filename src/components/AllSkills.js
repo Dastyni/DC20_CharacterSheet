@@ -30,8 +30,24 @@ const AllSkills = ({ character, onChange }) => {
             onChange={onChange}
             attribKey={"Might"}
           />
+
+          <AttribSkills
+            character={character}
+            onChange={onChange}
+            attribKey={"Agility"}
+          />
+          <AttribSkills
+            character={character}
+            onChange={onChange}
+            attribKey={"Charisma"}
+          />
         </td>
         <td className="alignTop">
+          <AttribSkills
+            character={character}
+            onChange={onChange}
+            attribKey={"Other"}
+          />
           <AttribSkills
             character={character}
             onChange={onChange}
@@ -40,20 +56,7 @@ const AllSkills = ({ character, onChange }) => {
         </td>
       </tr>
       <tr>
-        <td className="alignTop">
-          <AttribSkills
-            character={character}
-            onChange={onChange}
-            attribKey={"Agility"}
-          />
-        </td>
-        <td className="alignTop">
-          <AttribSkills
-            character={character}
-            onChange={onChange}
-            attribKey={"Charisma"}
-          />
-        </td>
+        <td className="alignTop"></td>
       </tr>
     </table>
   );

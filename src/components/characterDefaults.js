@@ -58,7 +58,8 @@ const CharacterDefaults = {
       Investigation: 0,
       Medicine: 0,
       Survival: 0,
-      Knowledge: {
+      Knowledge: 0,
+      subSkills: {
         Nature: 0,
         History: 0,
         Arcana: 0,
