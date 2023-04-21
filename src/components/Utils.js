@@ -165,6 +165,7 @@ export const recalculateCharacter = (character) => {
 export const getSkillBonus = (value, attribKey, character) => {
   return 2 * value;
 };
+
 export const getBonus = (value) => {
   console.log("have value as ", typeof value);
   if (value == undefined) return "";
@@ -174,4 +175,10 @@ export const getBonus = (value) => {
   if (isNaN(value)) return "";
 
   return value < 0 ? value : "+" + value;
+};
+
+export const getSaveDCValue = (character) => {
+  const CM = parseInt(getCombatMastery(character));
+  const P = calculatePrime(character);
+  return 8 + CM + P;
 };

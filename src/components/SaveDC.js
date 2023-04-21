@@ -20,7 +20,9 @@ const SaveDC = ({ character, attribKey, onChange }) => {
             name={attribKey}
             onChange={handleChange}
             // There is a calculation to be had here...
-            value={character[attribKey]}
+            value={utils.getSaveDCValue(character)}
+            readOnly
+            disabled
           />
         </center>
       </tr>

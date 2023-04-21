@@ -98,6 +98,11 @@ const CharacterSheet = ({ character, index, callbacks }) => {
             onChange={onChange}
           />
           <DisplayCM character={character} onChange={onChange} />
+          <SaveDC
+            character={character}
+            onChange={onChange}
+            attribKey="Save_DC"
+          />
         </div>
       </div>
       <div className="centerContent ">
@@ -111,11 +116,6 @@ const CharacterSheet = ({ character, index, callbacks }) => {
             character={character}
             attribKey="Movement"
             onChange={onChange}
-          />
-          <SaveDC
-            character={character}
-            onChange={onChange}
-            attribKey="Save_DC"
           />
           <DisplayRest
             character={character}
