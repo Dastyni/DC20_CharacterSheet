@@ -78,6 +78,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
           attribKey={"Stamina"}
           onChange={onChange}
         />
+        <DisplayHPAll character={character} onChange={onChange} />
         <DisplayManaBlock
           character={character}
           attribKey={"Mana"}
@@ -87,12 +88,6 @@ const CharacterSheet = ({ character, index, callbacks }) => {
       </div>
       <div className="centerContent ">
         <div className="centerContent setWidth table-wrapper ">
-          <DisplayHPAll character={character} onChange={onChange} />
-          <DisplayAttack
-            character={character}
-            attribKey={"Attack"}
-            onChange={onChange}
-          />
           <DisplayPrime
             character={character}
             attribKey={"PrimeAttribute"}
@@ -133,7 +128,18 @@ const CharacterSheet = ({ character, index, callbacks }) => {
       </div>
 
       <div className="centerContent">
-        <Attacks character={character} onChange={onChange} />
+        <table>
+          <td>
+            <DisplayAttack
+              character={character}
+              attribKey={"Attack"}
+              onChange={onChange}
+            />
+          </td>
+          <td>
+            <Attacks character={character} onChange={onChange} />
+          </td>
+        </table>
       </div>
 
       <div className="centerContent">

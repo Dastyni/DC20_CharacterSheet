@@ -10,6 +10,11 @@ const DisplayAttack = ({ character, attribKey, onChange }) => {
 
   return (
     <table>
+      <tr className="">
+        <span>
+          <center>{attribKey}</center>
+        </span>
+      </tr>
       <tr>
         <center>
           <input
@@ -23,11 +28,6 @@ const DisplayAttack = ({ character, attribKey, onChange }) => {
             disabled
           />
         </center>
-      </tr>
-      <tr>
-        <span>
-          <center>{attribKey}</center>
-        </span>
       </tr>
     </table>
   );

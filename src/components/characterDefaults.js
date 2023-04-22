@@ -98,6 +98,7 @@ const CharacterDefaults = {
   },
   Initiative: 0,
   Movement: 4,
+  Attacks: [{ Weapon: "", Damage: 1, Other: "" }],
 };
 
 export default CharacterDefaults;

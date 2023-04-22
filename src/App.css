@@ -525,3 +525,7 @@ table.skillWidth td:first-child {
 .block {
   display: inline-flex;
 }
+
+.vertAlign {
+  vertical-align: middle;
+}
