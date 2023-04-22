@@ -18,6 +18,7 @@ import DisplayInitiative from "./DisplayInitiative";
 import AllSkills from "./AllSkills";
 import DisplayRest from "./DisplayRest";
 import SaveDC from "./SaveDC";
+import Attacks from "./Attacks";
 
 const CharacterSheet = ({ character, index, callbacks }) => {
   const [imageUrl, setImageUrl] = useState(
@@ -129,6 +130,10 @@ const CharacterSheet = ({ character, index, callbacks }) => {
       </div>
       <div className="centerContent">
         <AttributeBlock character={character} onChange={onChange} />
+      </div>
+
+      <div className="centerContent">
+        <Attacks character={character} onChange={onChange} />
       </div>
 
       <div className="centerContent">
