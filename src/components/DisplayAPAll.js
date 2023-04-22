@@ -53,7 +53,7 @@ const DisplayAPAll = ({ character, onChange }) => {
                 width: "15px",
                 height: "15px",
                 borderRadius: "50%",
-                border: "1px solid black",
+                border: index === 4 ? "1px dotted grey" : "1px solid black",
                 backgroundColor: ap ? "rgba(199, 204, 129, 1)" : "white",
               }}
             ></span>
