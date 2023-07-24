@@ -56,6 +56,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
       >
         <button className="button">Back</button>
       </p>
+      <div id="characterSheet">
       <div className="centerContent">
         <p>
           <DisplayNames character={character} onChange={onChange} />
@@ -129,6 +130,7 @@ const CharacterSheet = ({ character, index, callbacks }) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

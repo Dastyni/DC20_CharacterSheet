@@ -10,6 +10,14 @@
   --border-color: #999;
 }
 
+#characterSheet {
+  background-image: url("images/CharacterSheet.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Optional: This keeps the background fixed when scrolling */
+  /* url("images/heart.png") no-repeat center center / contain; */
+}
+
 .App {
   text-align: center;
 }
